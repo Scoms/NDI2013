@@ -843,11 +843,11 @@ class Debugger {
  * @return void
  */
 	public static function checkSecurityKeys() {
-		if (Configure::read('Security.salt') === 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi') {
+		if (Configure::read('Security.salt') === 'F5D121B8F695C82AA76752F62FB3D') {
 			trigger_error(__d('cake_dev', 'Please change the value of %s in %s to a salt value specific to your application.', '\'Security.salt\'', 'APP/Config/core.php'), E_USER_NOTICE);
 		}
 
-		if (Configure::read('Security.cipherSeed') === '76859309657453542496749683645') {
+		if (Configure::read('Security.cipherSeed') === '1554353410501168779879804006504') {
 			trigger_error(__d('cake_dev', 'Please change the value of %s in %s to a numeric (digits only) seed value specific to your application.', '\'Security.cipherSeed\'', 'APP/Config/core.php'), E_USER_NOTICE);
 		}
 	}
